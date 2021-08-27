@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="6">
+
+
+    /* ?????? scrol view ro pak konam hala badan*/
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:text=""
+        android:id="@+id/display2"/>
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2196F3"
+        android:verticalScrollbarPosition="defaultPosition">
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:padding="20dp"
+            android:gravity="end|center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="50sp"
+            android:background="#2196F3"/>
+    </HorizontalScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center">
+        <TableRow android:gravity="center" android:layout_weight="1">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="AC"
+                android:id="@+id/btnAC"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:id="@+id/btnTaqsim"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:gravity="center"
+                android:id="@+id/btnZarb" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Del"
+                android:gravity="center"
+                android:id="@+id/btnDelete"/>
+        </TableRow>
+
+        <TableRow android:gravity="center" android:layout_weight="1">
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/btn1"/>
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:id="@+id/btn2"/>
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:id="@+id/btn3"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:id="@+id/btnSum" />
+        </TableRow>
+
+        <TableRow android:gravity="center" android:layout_weight="1">
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:id="@+id/btn4"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:id="@+id/btn5"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:id="@+id/btn6"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:id="@+id/btnTafrigh" />
+
+        </TableRow>
+
+
+        <TableRow android:gravity="center" android:layout_weight="1">
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:id="@+id/btn7"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:id="@+id/btn8"/>
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:id="@+id/btn9"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="."
+                android:id="@+id/btnDot"/>
+
+        </TableRow>
+
+        <TableRow android:gravity="center" android:layout_weight="1">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="("
+                android:gravity="center"
+                android:id="@+id/btnParantez2"/>
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:id="@+id/btn0"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text=")"
+                android:id="@+id/btnParantez"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="="
+                android:id="@+id/btnResult"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>
